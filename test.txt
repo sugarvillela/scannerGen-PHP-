@@ -1,0 +1,6 @@
+##that's wrong
+myVar = 55.3456 ##variable declaration
+4 + 5 = 6
+6+223.5 = 229.5  ##that one is right
+225/5 = 45
+33 * 3=99
