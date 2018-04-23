@@ -24,7 +24,7 @@ Symbol %%
 * PHP regular expressions are not the same as Flex regular expressions.
 > In Flex regex, double quotes can be found in the regular expression to indicate literal text.  PHP regexes don't have quotes around literal text.  In fact, don't put quotes in regexes at all.
 * Interpretation of quotes in **scannerGen**:
->Quoted text is sanitized for PHP regex engine, meaning something like "+" will be turned into this "\+".  That way the literal plus sign is interpreted instead of the regex operator.  Give literal text its own pattern; don't mix and match with regexes.
+>Quoted text is sanitized for PHP regex engine, meaning something like "+" will be turned into this "\\+".  That way the literal plus sign is interpreted instead of the regex operator.  Give literal text its own pattern; don't mix and match with regexes.
 * Placement of patterns: Definition section or Rule Section?
 >* Put regexes in the Definition section only
 >* Quoted literals can be in Definition section on the right hand side and/or in the Rule section on the left hand side
