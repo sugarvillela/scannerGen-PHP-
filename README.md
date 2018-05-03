@@ -12,8 +12,8 @@ This program generates a PHP-coded scanner from a Lex-Formatted file.
 >> * Symbol %}
 >* Section Two: **Definitions**
 >>>  * identifier	(tab) regex or quoted literal
->> * Symbol %%
 >* Section Three: **Rules**
+>> * Symbol %%
 >>>  * identifier	(tab) your code in curly braces
 >> * Symbol %% 
 >* Section Four: **Code**
