@@ -35,7 +35,6 @@ Symbol %%
 * Input Select follows Lex example:
 >* This means the default is the computer keyboard.  Or you can open a read file and assign the handle to $yy->in (see example in repository).  The generated scanner  will scan the whole file.
 >* For keyboard input, the scanner defaults to $_GET['ui'], where $_GET is form data and 'ui' is an arbitrary field name.  You can choose $_POST using the setHTTPMethod() function, passing 'post'.  You can change the field name using the setFormField() function.
-* **scannerGen** doesn't support comments
-> To keep the code short and simple, I didn't add comment support.  You can comment your Copy section code all you want, just not the Definition and Rule section.
-* yyval and yylval:
-> I left some things unfinished. **scannerGen** doesn't assign anything to these standard Lex variables
+* Known Issues (besides any of the above)
+>* I left some things unfinished. **scannerGen** doesn't assign anything to these standard Lex variables
+>* I didn't add comment support.  You can comment your Copy section code all you want, just not the Definition and Rule section.
