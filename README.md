@@ -8,16 +8,16 @@ This program generates a PHP-coded scanner from a Lex-Formatted file.
 * Lex file structure:  Just so we agree about the names of the sections:
 > * Section One: **Code**
 > Symbol %{
-Your code to be copied to new file
-Symbol %}
+> Your code to be copied to new file
+> Symbol %}
 > * Section Two: **Definitions**
 > identifier	(tab) regex or quoted literal
-Symbol %%
+> Symbol %%
 >* Section Three: **Rules**
-	identifier	(tab) your code in curly braces
-Symbol %% 
+> identifier	(tab) your code in curly braces
+> Symbol %% 
 >* Section Four: **Code**
-	More of your  code to be copied to new file
+> More of your  code to be copied to new file
 ## scannerGen notes:
 * If you are defining global variables in your code section...  
 > ...you need to list them in the definition section.  Use the keyword **%global** followed by a tab then a space- or comma- separated list. (See example Lex file in repository.)  This is to satisfy the PHP requirement that global variables be re-declared inside functions in which they are used.
