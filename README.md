@@ -38,3 +38,5 @@ This program generates a PHP-coded scanner from a Lex-Formatted file.
 * Known Issues (besides any of the above)
 >* I left some things unfinished. **scannerGen** doesn't assign anything to standard Lex variables yyval and yylval
 >* I didn't add comment support.  You can comment your Copy section code all you want, just not the Definition and Rule section.
+* Generated file is lexer.php
+>* This contains the code that is commented out in the scannerGen file, plus the result of the rule parsing
